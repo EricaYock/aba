@@ -1,6 +1,8 @@
+/* ABA Footer */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--background-color);
+  font-size: var(--body-font-size-s);
+  border-top: 1px solid var(--color-grey-border);
 }
 
 footer .footer > div {
@@ -10,11 +12,62 @@ footer .footer > div {
 }
 
 footer .footer p {
+  margin: 0 0 8px;
+}
+
+footer .footer a:any-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+footer .footer a:hover {
+  text-decoration: underline;
+}
+
+/* 3-column layout for footer sections */
+footer .footer .default-content-wrapper ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+footer .footer .default-content-wrapper ul li {
+  margin-bottom: 8px;
+}
+
+/* Logo in first section */
+footer .footer .default-content-wrapper:first-child img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* Contact info section */
+footer .footer .default-content-wrapper:first-child {
+  margin-bottom: 24px;
+}
+
+footer .footer .default-content-wrapper:first-child a.button:any-link {
+  background-color: transparent;
+  border: 2px solid var(--color-navy);
+  color: var(--color-navy);
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 20px;
+  margin-top: 12px;
+}
+
+footer .footer .default-content-wrapper:first-child a.button:hover {
+  background-color: var(--color-navy);
+  color: var(--color-white);
 }
 
 @media (width >= 900px) {
   footer .footer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
     padding: 40px 32px 24px;
   }
 }

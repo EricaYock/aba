@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "http://localhost:3000/migration-work/cleaned.html",
+  "path": "migration-work/cleaned",
+  "timestamp": "2026-05-06T19:00:00.420Z",
+  "title": "",
+  "template": "homepage",
+  "blocks": [
+    "hero-banner",
+    "cards-tags",
+    "columns-featured",
+    "cards-events",
+    "search-banner",
+    "search-banner",
+    "columns-highlights",
+    "cards-icons"
+  ]
+}

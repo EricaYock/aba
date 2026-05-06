@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-featured",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-06T18:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.aba.com/",
+    "originPage": "ABA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "featured-content",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "3-col: 2 content tiles + news list",
+    "buttonCount": 3,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "multi-column featured content grids",
+      "content tiles with news sidebars",
+      "3-column card-like layouts"
+    ],
+    "notSuitableFor": [
+      "simple 2-column text layouts",
+      "image-heavy columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T18:35:00.000Z"
+  }
+}

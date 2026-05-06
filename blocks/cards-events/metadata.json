@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-events",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-06T18:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.aba.com/",
+    "originPage": "ABA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "event-cards",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + date + title link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "event listings with images",
+      "conference/training cards",
+      "date-based content cards"
+    ],
+    "notSuitableFor": [
+      "text-only listings",
+      "icon-based cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T18:35:00.000Z"
+  }
+}

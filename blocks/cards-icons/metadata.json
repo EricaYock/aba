@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-icons",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-06T18:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.aba.com/",
+    "originPage": "ABA homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "member-benefits",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading link + description",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "feature/benefit sections with icons",
+      "service listings with descriptions",
+      "dark background icon grids"
+    ],
+    "notSuitableFor": [
+      "image-heavy card grids",
+      "event listings"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T18:35:00.000Z"
+  }
+}

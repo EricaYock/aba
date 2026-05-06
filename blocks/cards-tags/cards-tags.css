@@ -1,0 +1,95 @@
+/* Cards Tags - horizontal pill-shaped tag links */
+.cards-tags-container.section {
+  margin: 0;
+  padding: 12px 0;
+  background-color: #e8e4dd;
+}
+
+.cards-tags-container .default-content-wrapper {
+  display: inline;
+}
+
+.cards-tags-container .default-content-wrapper p {
+  display: inline;
+  font-size: var(--body-font-size-s);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 12px 0 0;
+  vertical-align: middle;
+}
+
+.cards-tags-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cards-tags-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cards-tags > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cards-tags > ul > li {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.cards-tags > ul > li::before {
+  content: none;
+}
+
+.cards-tags .cards-tags-card-body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide empty first card-body div */
+.cards-tags .cards-tags-card-body:first-child:empty {
+  display: none;
+}
+
+.cards-tags .cards-tags-card-body p {
+  margin: 0;
+}
+
+/* Override button styles to make pill tags */
+.cards-tags .cards-tags-card-body .button-container {
+  margin: 0;
+}
+
+.cards-tags .cards-tags-card-body a.button:any-link {
+  background-color: transparent;
+  border: 1.5px solid var(--text-color);
+  border-radius: 2em;
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  padding: 6px 18px;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.cards-tags .cards-tags-card-body a.button:hover {
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
+}

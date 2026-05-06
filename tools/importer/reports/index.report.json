@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "url": "https://www.aba.com/",
+  "path": "index",
+  "timestamp": "2026-05-06T18:59:07.894Z",
+  "error": "page.evaluate: Error: WebImporter not available. helix-importer script failed to load.\n    at eval (eval at evaluate (:290:30), <anonymous>:3:15)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "errorStack": "page.evaluate: Error: WebImporter not available. helix-importer script failed to load.\n    at eval (eval at evaluate (:290:30), <anonymous>:3:15)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at processUrl (/home/node/.excat-marketplace/excat/skills/excat-content-import/scripts/run-bulk-import.js:297:31)\n    at async main (/home/node/.excat-marketplace/excat/skills/excat-content-import/scripts/run-bulk-import.js:459:22)"
+}

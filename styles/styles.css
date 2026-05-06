@@ -1,73 +1,98 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
+ * ABA Design System - American Bankers Association
+ * Migrated from https://www.aba.com/
  */
 
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-  --overlay-background-color:lightgrey;
+  --background-color: #fff;
+  --light-color: #f5f5f5;
+  --dark-color: #333;
+  --text-color: #333;
+  --link-color: #0060b9;
+  --link-hover-color: #004a8f;
+  --overlay-background-color: rgb(0 0 0 / 50%);
+
+  /* brand colors */
+  --color-primary: #155897;
+  --color-primary-dark: #0e3d6b;
+  --color-accent: #c8932a;
+  --color-accent-hover: #b07d1f;
+  --color-navy: #1b2a4a;
+  --color-navy-dark: #0f1c33;
+  --color-grey-bg: #f5f5f5;
+  --color-grey-border: #dadada;
+  --color-white: #fff;
+  --color-gold-light: #d4a84b;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: "Open Sans", open-sans-fallback, sans-serif;
+  --heading-font-family: "Playfair Display", playfair-fallback, serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 42px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 26px;
+  --heading-font-size-m: 22px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
 
   /* nav heights */
   --nav-height: 64px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
+
+  /* spacing */
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 40px;
+  --spacing-xl: 60px;
+  --spacing-xxl: 80px;
+
+  /* buttons */
+  --button-border-radius: 2.4em;
+  --button-padding: 0.6em 1.5em;
+  --button-font-weight: 600;
+  --button-font-size: 13px;
+  --button-letter-spacing: 0.5px;
+  --button-text-transform: uppercase;
+  --button-transition: all 0.2s ease;
+
+  /* transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+  /* layout */
+  --content-max-width: 1200px;
+  --section-padding: 40px 0;
 }
 
 /* fallback fonts */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
+  font-family: open-sans-fallback;
+  size-adjust: 100%;
   src: local('Arial');
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  font-family: playfair-fallback;
+  size-adjust: 112%;
+  src: local('Georgia');
 }
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
+    --heading-font-size-xxl: 48px;
     --heading-font-size-xl: 36px;
     --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
+    --heading-font-size-m: 24px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
   }
@@ -81,6 +106,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.appear {
@@ -107,6 +133,7 @@ footer .footer[data-block-status="loaded"] {
   }
 }
 
+/* typography */
 h1,
 h2,
 h3,
@@ -116,9 +143,10 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--color-navy);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -167,11 +195,38 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   overflow-wrap: break-word;
+  transition: color var(--transition-base);
 }
 
 a:hover {
   color: var(--link-hover-color);
   text-decoration: underline;
+}
+
+/* CTA links - arrow style */
+a.cta-link,
+.call-to-action {
+  color: var(--link-color);
+  font-weight: 600;
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+a.cta-link::after,
+.call-to-action::after {
+  content: "›";
+  font-size: 1.2em;
+  transition: transform var(--transition-base);
+}
+
+a.cta-link:hover::after,
+.call-to-action:hover::after {
+  transform: translateX(3px);
 }
 
 /* buttons */
@@ -182,41 +237,61 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  letter-spacing: var(--button-letter-spacing);
+  text-transform: var(--button-text-transform);
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--color-accent);
+  color: var(--color-white);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: var(--button-transition);
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--color-accent-hover);
+  border-color: transparent;
   cursor: pointer;
+}
+
+a.button:focus,
+button:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 button:disabled,
 button:disabled:hover {
   background-color: var(--light-color);
+  color: var(--dark-color);
   cursor: unset;
 }
 
+/* secondary button - outlined */
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  background-color: transparent;
+  border: 2px solid var(--color-navy);
+  color: var(--color-navy);
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
 }
 
 main img {
@@ -242,7 +317,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: auto;
   padding: 0 24px;
 }
@@ -257,10 +332,86 @@ main > .section:first-of-type {
   }
 }
 
-/* section metadata */
+/* section metadata - light/grey backgrounds */
 main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
+main .section.highlight,
+main .section.grey {
+  background-color: var(--color-grey-bg);
   margin: 0;
-  padding: 40px 0;
+  padding: var(--spacing-l) 0;
+}
+
+/* section metadata - dark navy */
+main .section.dark,
+main .section.dark-navy {
+  background-color: var(--color-navy);
+  margin: 0;
+  padding: var(--spacing-xl) 0;
+  color: var(--color-white);
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark-navy h1,
+main .section.dark-navy h2,
+main .section.dark-navy h3,
+main .section.dark-navy h4 {
+  color: var(--color-white);
+}
+
+main .section.dark a:any-link,
+main .section.dark-navy a:any-link {
+  color: var(--color-white);
+}
+
+main .section.dark a.button:any-link,
+main .section.dark-navy a.button:any-link {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+  border-color: var(--color-white);
+}
+
+main .section.dark a.button:hover,
+main .section.dark-navy a.button:hover {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+main .section.dark a.button.secondary,
+main .section.dark-navy a.button.secondary {
+  background-color: transparent;
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+main .section.dark a.button.secondary:hover,
+main .section.dark-navy a.button.secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+}
+
+/* section metadata - navy blue (search bar) */
+main .section.navy-blue {
+  background-color: var(--color-primary);
+  margin: 0;
+  padding: var(--spacing-m) 0;
+  color: var(--color-white);
+}
+
+main .section.navy-blue h1,
+main .section.navy-blue h2,
+main .section.navy-blue h3 {
+  color: var(--color-white);
+}
+
+main .section.navy-blue a:any-link {
+  color: var(--color-white);
+}
+
+/* section metadata - accent highlight (gold text) */
+.accent {
+  color: var(--color-accent);
 }

@@ -1,0 +1,98 @@
+/* Cards Icons - centered icon cards on dark background */
+.cards-icons > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  text-align: center;
+}
+
+.cards-icons > ul > li {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-m);
+}
+
+.cards-icons .cards-icons-card-image {
+  line-height: 0;
+  margin-bottom: var(--spacing-s);
+}
+
+.cards-icons .cards-icons-card-image img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  aspect-ratio: auto;
+}
+
+.cards-icons .cards-icons-card-body {
+  margin: 0;
+}
+
+.cards-icons .cards-icons-card-body p {
+  font-size: var(--body-font-size-s);
+  color: rgb(255 255 255 / 85%);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cards-icons .cards-icons-card-body h3 {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 8px;
+}
+
+.cards-icons .cards-icons-card-body h3 a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.cards-icons .cards-icons-card-body h3 a:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .cards-icons > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Section-level: center heading, eyebrow, and button in dark-navy section */
+.cards-icons-container.dark-navy .default-content-wrapper {
+  text-align: center;
+}
+
+.cards-icons-container.dark-navy .default-content-wrapper p {
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: var(--body-font-size-s);
+}
+
+.cards-icons-container.dark-navy .default-content-wrapper h2 {
+  font-family: var(--heading-font-family);
+  color: var(--color-accent);
+  font-size: var(--heading-font-size-xl);
+}
+
+.cards-icons-container.dark-navy .default-content-wrapper .button-container {
+  margin-top: var(--spacing-m);
+}
+
+.cards-icons-container.dark-navy .default-content-wrapper a.button:any-link {
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.cards-icons-container.dark-navy .default-content-wrapper a.button:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+}

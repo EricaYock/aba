@@ -1,0 +1,38 @@
+{
+  "variantName": "search-banner",
+  "baseBlock": "search",
+  "version": "1.0.0",
+  "created": "2026-05-06T18:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.aba.com/",
+    "originPage": "ABA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "site-search",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "search input + CTA link",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "dark background search bars",
+      "site-wide search sections",
+      "search with adjacent CTA links"
+    ],
+    "notSuitableFor": [
+      "inline search within content",
+      "light background search"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T18:35:00.000Z"
+  }
+}

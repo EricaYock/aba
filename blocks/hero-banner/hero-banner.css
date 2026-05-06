@@ -1,0 +1,161 @@
+/* Hero Banner - full-bleed dark section with split text/image layout */
+.hero-banner-container {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-banner-container .hero-banner-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-banner-container.section {
+  margin: 0;
+}
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 320px;
+  overflow: hidden;
+  background-color: var(--color-navy);
+}
+
+/* Image container (first div) */
+.hero-banner > div:first-child {
+  order: 2;
+  line-height: 0;
+}
+
+.hero-banner > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 200px;
+}
+
+/* Text container (second div = selected element) */
+.hero-banner > div:nth-child(2) {
+  order: 1;
+  background-color: var(--color-navy);
+  padding: var(--spacing-l) var(--spacing-m);
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner > div:nth-child(2) > div {
+  max-width: 520px;
+}
+
+/* Heading - serif italic gold accent */
+.hero-banner h1 {
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-white);
+  margin: 0 0 16px;
+  line-height: 1.15;
+}
+
+/* Body text */
+.hero-banner p {
+  color: var(--color-white);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+/* Button containers - inline side-by-side */
+.hero-banner .button-container {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+
+/* Primary button (gold) */
+.hero-banner a.button:any-link {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--button-border-radius);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  text-transform: var(--button-text-transform);
+  letter-spacing: var(--button-letter-spacing);
+  padding: 10px 24px;
+  margin: 0;
+  transition: var(--button-transition);
+}
+
+.hero-banner a.button:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+/* Secondary button (white outlined) - second button */
+.hero-banner .button-container:nth-child(4) a.button:any-link,
+.hero-banner a.button.secondary:any-link {
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.hero-banner .button-container:nth-child(4) a.button:hover,
+.hero-banner a.button.secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+  border-color: var(--color-white);
+}
+
+/* Last link "Am I a Member?" - text link with arrow, not button */
+.hero-banner .button-container:last-child {
+  display: block;
+  margin-top: 4px;
+}
+
+.hero-banner .button-container:last-child a.button:any-link {
+  background-color: transparent;
+  border: none;
+  color: var(--color-white);
+  padding: 0;
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  text-transform: var(--button-text-transform);
+  letter-spacing: var(--button-letter-spacing);
+}
+
+.hero-banner .button-container:last-child a.button::after {
+  content: " ›";
+  font-size: 1.2em;
+}
+
+.hero-banner .button-container:last-child a.button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Non-button links */
+.hero-banner a:any-link {
+  color: var(--color-white);
+}
+
+@media (width >= 900px) {
+  .hero-banner {
+    grid-template-columns: 1fr 1fr;
+    min-height: 380px;
+  }
+
+  .hero-banner > div:first-child {
+    order: 2;
+  }
+
+  .hero-banner > div:nth-child(2) {
+    order: 1;
+    padding: var(--spacing-xl) var(--spacing-l);
+  }
+
+  .hero-banner h1 {
+    font-size: var(--heading-font-size-xxl);
+  }
+}

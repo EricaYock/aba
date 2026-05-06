@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-highlights",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-06T18:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.aba.com/",
+    "originPage": "ABA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "highlight-content",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "2-col: highlight boxes (text+image) + webinars list",
+    "buttonCount": 3,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "feature highlight sections with images",
+      "content + sidebar list layouts",
+      "promotional content with adjacent listings"
+    ],
+    "notSuitableFor": [
+      "simple text columns",
+      "equal-weight column layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T18:35:00.000Z"
+  }
+}
