@@ -1,5 +1,9 @@
 {
   "type": "xwalk",
   "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
-  "contentHostUrl": "author-p178211-e1869897.adobeaemcloud.com"
+  "contentHostUrl": "author-p178211-e1869897.adobeaemcloud.com",
+  "aemSitePath": "/content/aba",
+  "aemAssetsFolderPath": "/content/dam/aba",
+  "aemSiteName": "aba",
+  "aemSiteTitle": "ABA"
 }
