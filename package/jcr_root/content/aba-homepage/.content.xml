@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+  jcr:primaryType="cq:Page">
+  <jcr:content
+    jcr:primaryType="cq:PageContent"
+    jcr:title="ABA Homepage"
+    sling:resourceType="core/franklin/components/page/v1/page"
+    cq:template="/conf/franklin/settings/wcm/templates/default"
+    jcr:description="The American Bankers Association offers training, certification, news, research, advocacy, and community for bankers.">
+    <section_0
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="core/franklin/components/section/v1/section">
+      <block_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="hero-banner"/>
+    </section_0>
+    <section_1
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="core/franklin/components/section/v1/section">
+      <block_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/text/v1/text"
+        text="&lt;strong&gt;Popular Resources:&lt;/strong&gt;"/>
+      <block_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="cards-tags"/>
+    </section_1>
+    <section_2
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="core/franklin/components/section/v1/section"
+      style="stylegrey">
+      <block_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="columns-featured"/>
+      <block_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/text/v1/text"
+        text="Join Us for Upcoming Events"/>
+      <block_2
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="cards-events"/>
+    </section_2>
+    <section_3
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="core/franklin/components/section/v1/section"
+      style="stylenavy-blue">
+      <block_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="search-banner"/>
+      <block_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/text/v1/text"
+        text="&lt;a href=&quot;/experts-peers/experts&quot;&gt;Ask ABA Experts On Call&lt;/a&gt;"/>
+    </section_3>
+    <section_4
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="core/franklin/components/section/v1/section"
+      style="stylegrey">
+      <block_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="columns-highlights"/>
+    </section_4>
+    <section_5
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="core/franklin/components/section/v1/section"
+      style="styledark-navy">
+      <block_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/text/v1/text"
+        text="Why Our Members Love Us"/>
+      <block_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/text/v1/text"
+        text="Member Benefits"/>
+      <block_2
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/block/v1/block"
+        name="cards-icons"/>
+      <block_3
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/text/v1/text"
+        text="&lt;a href=&quot;/membership&quot;&gt;Explore Membership&lt;/a&gt;"/>
+    </section_5>
+  </jcr:content>
+</jcr:root>

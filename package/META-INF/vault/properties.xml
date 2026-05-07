@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <comment>FileVault Package Properties</comment>
+  <entry key="name">aba-homepage-content</entry>
+  <entry key="group">aba</entry>
+  <entry key="version">1.0.0</entry>
+  <entry key="packageType">content</entry>
+  <entry key="description">ABA Homepage content migrated from www.aba.com</entry>
+  <entry key="createdBy">excat-migration</entry>
+</properties>
