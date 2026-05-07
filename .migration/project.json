@@ -5,5 +5,7 @@
   "aemSitePath": "/content/aba",
   "aemAssetsFolderPath": "/content/dam/aba",
   "aemSiteName": "aba",
-  "aemSiteTitle": "ABA"
+  "aemSiteTitle": "ABA",
+  "previewOrg": "EricaYock",
+  "previewSite": "aba"
 }

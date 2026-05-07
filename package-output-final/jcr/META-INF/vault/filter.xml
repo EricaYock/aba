@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<workspaceFilter version="1.0">
+  <filter root="/content/aba/index"></filter>
+  <filter root="/content/aba/nav"></filter>
+  <filter root="/content/aba/footer"></filter>
+</workspaceFilter>
